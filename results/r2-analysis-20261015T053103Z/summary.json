@@ -1,0 +1,35 @@
+{
+  "stamp": "20261015T053103Z",
+  "results_table": "dqm_readiness.r2_results_20261015t053103z",
+  "sets": [
+    "COHORT_A",
+    "CHANGED_B",
+    "CHANGED_C",
+    "CHANGED_D",
+    "SCENARIO_GLUCOSE_LAB_ONLY",
+    "SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED",
+    "SCENARIO_MISSING_LINKS_1",
+    "SCENARIO_MISSING_LINKS_10",
+    "SCENARIO_MISSING_LINKS_50",
+    "SCENARIO_NATURAL_CODES",
+    "SCENARIO_NATURAL_LINKS",
+    "SCENARIO_NATURAL_PROFILES",
+    "SCENARIO_NATURAL_UNITS",
+    "SCENARIO_OBSERVATION_AS_INPATIENT",
+    "SCENARIO_STATUS_LOWER",
+    "SCENARIO_STATUS_UPPER",
+    "SCENARIO_TERM_TYPE_1",
+    "SCENARIO_TERM_TYPE_10",
+    "SCENARIO_TERM_TYPE_50"
+  ],
+  "bootstrap": {
+    "resamples": 2000,
+    "kind": "Poisson, paired by stay",
+    "seed": "dqm-r2-bootstrap-20261014"
+  },
+  "athena": {
+    "queries": 189,
+    "data_scanned_mb": 2758.6
+  },
+  "wall_seconds": 782.1
+}

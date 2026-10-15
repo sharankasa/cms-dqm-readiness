@@ -1,0 +1,11 @@
+measure,reason,outcome,stays
+CMS816FHIRHHHypo,g1 highest workload,identical,125
+CMS816FHIRHHHypo,g2 ED or observation just before admission,identical,125
+CMS816FHIRHHHypo,g3 readmission within 24 h,identical,125
+CMS816FHIRHHHypo,g4 spans a year boundary,identical,125
+CMS816FHIRHHHypo,random,identical,1500
+CMS871FHIRHHHyper,g1 highest workload,identical,125
+CMS871FHIRHHHyper,g2 ED or observation just before admission,identical,125
+CMS871FHIRHHHyper,g3 readmission within 24 h,identical,125
+CMS871FHIRHHHyper,g4 spans a year boundary,identical,125
+CMS871FHIRHHHyper,random,identical,1500

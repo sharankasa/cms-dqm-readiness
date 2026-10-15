@@ -1,0 +1,3 @@
+measure,n_fit,n_holdout,slope,intercept,r2_fit,r2_holdout_log,median_abs_pct_error_holdout
+CMS816FHIRHHHypo,1434,566,0.293,-0.319,0.678,0.748,0.18
+CMS871FHIRHHHyper,1434,566,0.157,-0.526,0.481,0.515,0.206

@@ -1,0 +1,6 @@
+role,family,records
+diabetes_diagnosis,QI-Core,52623
+encounter,QI-Core,88234
+glucose_result,QI-Core,824809
+medication_cms816,QI-Core,549409
+medication_cms871,QI-Core,568742

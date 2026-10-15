@@ -1,0 +1,45 @@
+# Indexed Job: one pod per shard, each pod evaluates the stays of its shard with CMS's reference
+# engine and appends one line per (measure, stay) to its own output file. A pod that dies is
+# replaced by the Job controller; the replacement resumes from the output file (finished
+# (measure, stay) pairs are skipped), so every stay is written exactly once.
+# Local version (Docker Desktop Kubernetes, kubeadm): the project folder is mounted with hostPath.
+# Placeholders filled by run_local_job.sh: __NAME__, __SHARDS__, __PARALLEL__, __PROJECT__, __OUT__.
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: __NAME__
+  labels: {app: dqm-worker}
+spec:
+  completionMode: Indexed
+  completions: __SHARDS__
+  parallelism: __PARALLEL__
+  backoffLimit: 20
+  template:
+    metadata:
+      labels: {app: dqm-worker, job: __NAME__}
+    spec:
+      restartPolicy: Never
+      securityContext: {runAsUser: 1000, runAsGroup: 1000}
+      containers:
+        - name: worker
+          image: dqm-worker:dev
+          imagePullPolicy: Never
+          env:
+            - name: SHARD
+              valueFrom:
+                fieldRef: {fieldPath: "metadata.annotations['batch.kubernetes.io/job-completion-index']"}
+          args: ["--mode", "sliced",
+                 "--prep", "/w/work/demo-prep",
+                 "--out", "/w/__OUT__/sliced_$(SHARD).jsonl",
+                 "--shard", "$(SHARD)/__SHARDS__",
+                 "--bundles", "/w/vendor/dqm-content/bundles/measure/CMS816FHIRHHHypo/CMS816FHIRHHHypo-bundle.json",
+                              "/w/vendor/dqm-content/bundles/measure/CMS871FHIRHHHyper/CMS871FHIRHHHyper-bundle.json",
+                 "--vs-cache", "/w/vendor/vsac-cache"]
+          resources:
+            requests: {cpu: "1", memory: 1Gi}
+            limits: {memory: 3Gi}
+          volumeMounts:
+            - {name: project, mountPath: /w}
+      volumes:
+        - name: project
+          hostPath: {path: "__PROJECT__", type: Directory}

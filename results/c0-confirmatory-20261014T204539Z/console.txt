@@ -1,0 +1,11 @@
+value sets declared in CQL but absent from the bundle: 1 -> 2.16.840.1.113762.1.4.1099.24
+VSAC: added 1 value set(s) from ../../vendor/vsac-cache; still missing: 0
+fqm-vsac CMS816FHIRHHHypo: 28/28 test cases match expected -> ../../results/c0-confirmatory-20261014T204539Z/fqm-vsac_CMS816FHIRHHHypo.csv
+Failed to locate element for ServiceRequest.performed
+Failed to locate element for ServiceRequest.performed
+Failed to locate element for ServiceRequest.performed
+fqm-patched-vsac-detailed CMS871FHIRHHHyper: 26/26 test cases match expected -> ../../results/c0-confirmatory-20261014T204539Z/fqm-patched-vsac-detailed_CMS871FHIRHHHyper.csv
+value sets declared in CQL but absent from the bundle: 1 -> 2.16.840.1.113762.1.4.1099.24
+fqm CMS816FHIRHHHypo: 0/28 test cases match expected -> ../../results/c0-confirmatory-20261014T204539Z/fqm_CMS816FHIRHHHypo.csv
+value sets declared in CQL but absent from the bundle: 1 -> 2.16.840.1.113762.1.4.1196.394
+fqm CMS871FHIRHHHyper: 0/26 test cases match expected -> ../../results/c0-confirmatory-20261014T204539Z/fqm_CMS871FHIRHHHyper.csv

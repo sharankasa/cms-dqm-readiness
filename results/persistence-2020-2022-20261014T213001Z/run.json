@@ -1,0 +1,41 @@
+{
+  "sql": "pipeline/cohort/20_persistence_2020_2022.sql",
+  "params": {
+    "loc": "s3://your-bucket/dqm/cohort/persistence-20261014T213001Z"
+  },
+  "db": "analytics",
+  "finished_utc": "2026-10-14T21:46:23+00:00",
+  "queries": 5,
+  "data_scanned_mb": 3964.5,
+  "engine_seconds": 968.1,
+  "statements": [
+    {
+      "n": 1,
+      "statement_start": "DROP TABLE IF EXISTS analytics.dqm_persistence_groups",
+      "query_id": "73a246da-2398-4a59-8728-20a157871753"
+    },
+    {
+      "n": 2,
+      "statement_start": "CREATE TABLE analytics.dqm_persistence_groups WITH (format",
+      "query_id": "db2bdfdf-afe5-41fb-8725-cb2759bba383"
+    },
+    {
+      "n": 3,
+      "statement_start": "SELECT g.year_group, count(*) AS admissions,",
+      "query_id": "9bb8eb84-e09a-42e2-9dda-21cf35ef83fb",
+      "rows": 2
+    },
+    {
+      "n": 4,
+      "statement_start": "SELECT g.year_group, count(*) AS lab_glucose_results,",
+      "query_id": "a5fa0fcb-9cd7-455d-8397-2389412d0eb5",
+      "rows": 2
+    },
+    {
+      "n": 5,
+      "statement_start": "SELECT g.year_group, count(*) AS bedside_glucose_results,",
+      "query_id": "9da9ca66-2b89-4b4d-9936-01c648ef1c32",
+      "rows": 2
+    }
+  ]
+}

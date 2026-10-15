@@ -1,0 +1,48 @@
+{
+ "hospitals_plotted": 206,
+ "elements": {
+  "pct_glucose": {
+   "label": "Any glucose result",
+   "overall_pct": 96.05,
+   "hospitals": 206,
+   "outside_95": 147,
+   "outside_99_8": 117
+  },
+  "pct_bedside_glucose": {
+   "label": "Bedside glucose",
+   "overall_pct": 65.13,
+   "hospitals": 206,
+   "outside_95": 183,
+   "outside_99_8": 162
+  },
+  "pct_insulin": {
+   "label": "Insulin ordered or infused",
+   "overall_pct": 29.66,
+   "hospitals": 206,
+   "outside_95": 182,
+   "outside_99_8": 164
+  },
+  "pct_diabetes_any": {
+   "label": "Diabetes diagnosis or history",
+   "overall_pct": 27.86,
+   "hospitals": 206,
+   "outside_95": 121,
+   "outside_99_8": 91
+  },
+  "pct_comfort_or_eol": {
+   "label": "Comfort-care or end-of-life note",
+   "overall_pct": 2.69,
+   "hospitals": 206,
+   "outside_95": 100,
+   "outside_99_8": 65
+  },
+  "pct_lab_glucose": {
+   "label": "Laboratory glucose",
+   "overall_pct": 94.51,
+   "hospitals": 206,
+   "outside_95": 155,
+   "outside_99_8": 128
+  }
+ },
+ "glucose_results_mgdl_overall_pct": 100.0
+}

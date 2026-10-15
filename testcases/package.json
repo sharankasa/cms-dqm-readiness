@@ -1,0 +1,8 @@
+{
+  "name": "dqm-fqm-runner",
+  "private": true,
+  "description": "Runs CMS's QI-Core measures on CMS's test cases with fqm-execution (the engine CMS's MADiE uses).",
+  "dependencies": {
+    "fqm-execution": "1.8.5"
+  }
+}

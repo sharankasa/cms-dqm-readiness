@@ -1,0 +1,8 @@
+{
+  "name": "dqm-worker-s3",
+  "private": true,
+  "description": "S3 input/output wrapper around pipeline/s1/run_engine.js for the EKS worker (the pilot-the readiness inputs)",
+  "dependencies": {
+    "@aws-sdk/client-s3": "3.1149.0"
+  }
+}

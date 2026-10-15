@@ -1,0 +1,502 @@
+{
+  "generated_utc": "2026-10-14T04:42:24.819Z",
+  "engine": "fqm-execution 1.8.5",
+  "measures": {
+    "CMS816FHIRHHHypo": {
+      "bundle": "vendor/dqm-content/bundles/measure/CMS816FHIRHHHypo/CMS816FHIRHHHypo-bundle.json",
+      "data_requirements": [
+        {
+          "type": "Encounter",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter",
+          "code_filters": [
+            {
+              "path": "type",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307",
+              "codes": []
+            }
+          ],
+          "date_filters": [
+            "period.end"
+          ]
+        },
+        {
+          "type": "MedicationAdministration",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationadministration",
+          "code_filters": [
+            {
+              "path": "medication",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.393",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Observation",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.34",
+              "codes": []
+            },
+            {
+              "path": "status",
+              "value_set": null,
+              "codes": [
+                "final",
+                "amended",
+                "corrected"
+              ]
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Observation",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.34",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Coverage",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage",
+          "code_filters": [
+            {
+              "path": "type",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        }
+      ],
+      "value_sets": [
+        {
+          "name": "Federal Administrative Sex",
+          "oid": "2.16.840.1.113762.1.4.1021.121",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Intensive Care Unit",
+          "oid": "2.16.840.1.113762.1.4.1029.206",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Positive Pregnancy Status",
+          "oid": "2.16.840.1.113762.1.4.1099.24",
+          "expansion_in_bundle": false
+        },
+        {
+          "name": "Outpatient Surgery Service",
+          "oid": "2.16.840.1.113762.1.4.1110.38",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Observation Services",
+          "oid": "2.16.840.1.113762.1.4.1111.143",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Present on Admission or Clinically Undetermined",
+          "oid": "2.16.840.1.113762.1.4.1147.197",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Hypoglycemics Severe Hypoglycemia",
+          "oid": "2.16.840.1.113762.1.4.1196.393",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Glucose Lab Test Mass Per Volume",
+          "oid": "2.16.840.1.113762.1.4.1248.34",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Emergency Department Visit",
+          "oid": "2.16.840.1.113883.3.117.1.7.1.292",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Encounter Inpatient",
+          "oid": "2.16.840.1.113883.3.666.5.307",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Payer Type",
+          "oid": "2.16.840.1.114222.4.11.3591",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Race",
+          "oid": "2.16.840.1.114222.4.11.836",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Ethnicity",
+          "oid": "2.16.840.1.114222.4.11.837",
+          "expansion_in_bundle": true
+        }
+      ]
+    },
+    "CMS871FHIRHHHyper": {
+      "bundle": "vendor/dqm-content/bundles/measure/CMS871FHIRHHHyper/CMS871FHIRHHHyper-bundle.json",
+      "data_requirements": [
+        {
+          "type": "Procedure",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-procedure",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/1.3.6.1.4.1.33895.1.3.0.45",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "ServiceRequest",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-servicerequest",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/1.3.6.1.4.1.33895.1.3.0.45",
+              "codes": []
+            },
+            {
+              "path": "status",
+              "value_set": null,
+              "codes": [
+                "active",
+                "completed"
+              ]
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Encounter",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-encounter",
+          "code_filters": [
+            {
+              "path": "type",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.666.5.307",
+              "codes": []
+            }
+          ],
+          "date_filters": [
+            "period.end"
+          ]
+        },
+        {
+          "type": "Condition",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-encounter-diagnosis",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Condition",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-condition-problems-health-concerns",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113883.3.464.1003.103.12.1001",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "MedicationAdministration",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-medicationadministration",
+          "code_filters": [
+            {
+              "path": "medication",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1196.394",
+              "codes": []
+            },
+            {
+              "path": "status",
+              "value_set": null,
+              "codes": [
+                "completed",
+                "in-progress"
+              ]
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Observation",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.34",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Observation",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-observation-lab",
+          "code_filters": [
+            {
+              "path": "code",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1248.34",
+              "codes": []
+            },
+            {
+              "path": "status",
+              "value_set": null,
+              "codes": [
+                "final",
+                "amended",
+                "corrected"
+              ]
+            }
+          ],
+          "date_filters": []
+        },
+        {
+          "type": "Coverage",
+          "profile": "http://hl7.org/fhir/us/qicore/StructureDefinition/qicore-coverage",
+          "code_filters": [
+            {
+              "path": "type",
+              "value_set": "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.114222.4.11.3591",
+              "codes": []
+            }
+          ],
+          "date_filters": []
+        }
+      ],
+      "value_sets": [
+        {
+          "name": "Comfort Measures",
+          "oid": "1.3.6.1.4.1.33895.1.3.0.45",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Federal Administrative Sex",
+          "oid": "2.16.840.1.113762.1.4.1021.121",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Intensive Care Unit",
+          "oid": "2.16.840.1.113762.1.4.1029.206",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Outpatient Surgery Service",
+          "oid": "2.16.840.1.113762.1.4.1110.38",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Observation Services",
+          "oid": "2.16.840.1.113762.1.4.1111.143",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Present on Admission or Clinically Undetermined",
+          "oid": "2.16.840.1.113762.1.4.1147.197",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Hypoglycemics Treatment Medications",
+          "oid": "2.16.840.1.113762.1.4.1196.394",
+          "expansion_in_bundle": false
+        },
+        {
+          "name": "Glucose Lab Test Mass Per Volume",
+          "oid": "2.16.840.1.113762.1.4.1248.34",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Discharged to Health Care Facility for Hospice Care",
+          "oid": "2.16.840.1.113883.3.117.1.7.1.207",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Discharged to Home for Hospice Care",
+          "oid": "2.16.840.1.113883.3.117.1.7.1.209",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Emergency Department Visit",
+          "oid": "2.16.840.1.113883.3.117.1.7.1.292",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Diabetes",
+          "oid": "2.16.840.1.113883.3.464.1003.103.12.1001",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Encounter Inpatient",
+          "oid": "2.16.840.1.113883.3.666.5.307",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Payer Type",
+          "oid": "2.16.840.1.114222.4.11.3591",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Race",
+          "oid": "2.16.840.1.114222.4.11.836",
+          "expansion_in_bundle": true
+        },
+        {
+          "name": "Ethnicity",
+          "oid": "2.16.840.1.114222.4.11.837",
+          "expansion_in_bundle": true
+        }
+      ]
+    }
+  },
+  "element_rules": [
+    {
+      "role": "glucose_result",
+      "resource": "Observation",
+      "element": "valueQuantity (UCUM, mass per volume)",
+      "rule": "value compared with mg/dL thresholds (40, 80, 200, 300, 600); CMS FHIRHelpers.ToQuantity accepts UCUM units only",
+      "used_by": [
+        "CMS816: Glucose Test With Result Less Than 40, Low Glucose Test Followed By Glucose Test Result Greater Than 80",
+        "CMS871: Encounter with Elevated Glucose Greater Than or Equal to 200, Days with Hyperglycemic Events, Glucose Greater Than 600 ..."
+      ]
+    },
+    {
+      "role": "glucose_result",
+      "resource": "Observation",
+      "element": "effective[x]",
+      "rule": "result time placed in the hospitalization / in a day / within 24 h of a dose",
+      "used_by": [
+        "CMS816: Glucose Test With Result Less Than 40",
+        "CMS871: Days with Glucose Results"
+      ]
+    },
+    {
+      "role": "glucose_result",
+      "resource": "Observation",
+      "element": "status in final | amended | corrected",
+      "rule": "data requirement status filter",
+      "used_by": [
+        "both measures"
+      ]
+    },
+    {
+      "role": "medication_cms816",
+      "resource": "MedicationAdministration",
+      "element": "status = completed",
+      "rule": "only completed administrations count",
+      "used_by": [
+        "CMS816: Hypoglycemic Medication Administration"
+      ]
+    },
+    {
+      "role": "medication_cms871",
+      "resource": "MedicationAdministration",
+      "element": "status in completed | in-progress",
+      "rule": "data requirement status filter",
+      "used_by": [
+        "CMS871: Encounter with Hypoglycemic Medication"
+      ]
+    },
+    {
+      "role": "medication_cms816",
+      "resource": "MedicationAdministration",
+      "element": "effective[x] start",
+      "rule": "dose start within the hospitalization and within 24 h before a low result",
+      "used_by": [
+        "CMS816: Hypoglycemic Medication Administration, Severe Hypoglycemic Harm Event"
+      ]
+    },
+    {
+      "role": "medication_cms871",
+      "resource": "MedicationAdministration",
+      "element": "effective[x] with an end",
+      "rule": "the whole administration period must lie in the hospitalization; a period without an end never does",
+      "used_by": [
+        "CMS871: Encounter with Hypoglycemic Medication"
+      ]
+    },
+    {
+      "role": "medication_cms816",
+      "resource": "MedicationAdministration",
+      "element": "RxNorm code at the term types the value set lists",
+      "rule": "value-set membership is exact on code; a brand or ingredient code of the same drug does not match",
+      "used_by": [
+        "both measures"
+      ]
+    },
+    {
+      "role": "medication_cms816",
+      "resource": "MedicationAdministration",
+      "element": "status consistent with the recorded eMAR event",
+      "rule": "a not-given dose recorded as completed counts as a dose (MIMIC-specific: the event is kept in dosage.method)",
+      "used_by": [
+        "CMS816: Hypoglycemic Medication Administration",
+        "CMS871: Encounter with Hypoglycemic Medication"
+      ]
+    },
+    {
+      "role": "encounter",
+      "resource": "Encounter",
+      "element": "status = finished; period start and end",
+      "rule": "inpatient encounter ending in the measurement period",
+      "used_by": [
+        "CQMCommon: Inpatient Encounter; both measures: Qualifying Encounter"
+      ]
+    },
+    {
+      "role": "encounter",
+      "resource": "Encounter",
+      "element": "reasonReference / diagnosis to its diagnoses",
+      "rule": "encounter diagnoses are reached through the encounter",
+      "used_by": [
+        "CMS871: Encounter with Existing Diabetes Diagnosis"
+      ]
+    },
+    {
+      "role": "diabetes_diagnosis",
+      "resource": "Condition",
+      "element": "onset and clinicalStatus (or abatement)",
+      "rule": "QICoreCommon prevalenceInterval() is null for a condition that is neither active nor abated",
+      "used_by": [
+        "CMS871: Encounter with Existing Diabetes Diagnosis"
+      ]
+    },
+    {
+      "role": "all",
+      "resource": "all retrieved types",
+      "element": "subject reference to the Patient",
+      "rule": "patient-level retrieval",
+      "used_by": [
+        "all retrieves"
+      ]
+    },
+    {
+      "role": "all",
+      "resource": "all retrieved types",
+      "element": "meta.profile = the QI-Core profile of the retrieve",
+      "rule": "the engine retrieves by profile (trustMetaProfile default true): an undeclared profile is invisible",
+      "used_by": [
+        "all retrieves"
+      ]
+    }
+  ]
+}

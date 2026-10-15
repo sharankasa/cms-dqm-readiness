@@ -1,0 +1,25 @@
+# credentials and local settings
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+
+# licensed or credentialed content: never commit
+vendor/
+work/
+**/vsac-cache/
+
+# new run outputs (the shipped results/ folders stay tracked)
+results/*-2027*/
+results/eks-*/
+
+# build and tool state
+node_modules/
+__pycache__/
+.terraform/
+*.tfstate
+*.tfstate.*
+tfplan
+infra/eks/.build/
+.DS_Store

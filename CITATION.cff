@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the preprint and this repository."
+title: "cms-dqm-readiness: code and results for 'Identical results, hidden data problems: running CMS's digital quality measures on real hospital data'"
+authors:
+  - family-names: Kasa
+    given-names: Sai Sharan
+    orcid: "https://orcid.org/0009-0002-7425-4516"
+    affiliation: "Independent Researcher, Seattle, WA, USA"
+license: Apache-2.0
+repository-code: "https://github.com/sharankasa/cms-dqm-readiness"
+version: "1.0.0"
+date-released: "2026-10-17"
+keywords:
+  - digital quality measures
+  - FHIR
+  - CQL
+  - CMS816
+  - CMS871
+  - data quality
+  - MIMIC-IV

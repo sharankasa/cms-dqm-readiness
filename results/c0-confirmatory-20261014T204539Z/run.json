@@ -1,0 +1,6 @@
+{"what": "C0 confirmatory re-run on pinned versions (registered)", "utc": "2026-10-14T20:45:39Z",
+ "measure_content": "cqframework/dqm-content-qicore-2025 @ 5f840c8792ab3d0c026fc17d07847d782d34e482 (vendor/dqm-content)",
+ "engine": "fqm-execution 1.8.5 (testcases/node_modules)", "node": "v22.23.2",
+ "value_sets": "vendor/vsac-cache (VSAC; 1099.24 and 1196.394; never committed)",
+ "runs": {"CMS816 as shipped": "0/28", "CMS871 as shipped": "0/26",
+          "CMS816 + VSAC expansion": "28/28", "CMS871 + VSAC expansion + aggregate patch + detailed counting": "26/26"}}

@@ -1,0 +1,3 @@
+measure,stays,p50_s,p95_s,p99_s,max_s,total_s,top1pct_share
+CMS816FHIRHHHypo,2000,0.879,10.18,218.3,818.1,17494.0,0.397
+CMS871FHIRHHHyper,2000,1.009,3.85,15.1,24.0,2958.0,0.13

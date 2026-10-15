@@ -1,0 +1,277 @@
+set,measure,definition,moved_stays_where_changed,moved_stays
+CHANGED_B,CMS816,Hypoglycemic Medication Administration,459,459
+CHANGED_B,CMS816,Encounter With Hypoglycemic Medication Administration,453,459
+CHANGED_B,CMS816,Denominator,453,459
+CHANGED_B,CMS816,Initial Population,453,459
+CHANGED_B,CMS816,Numerator,<10,459
+CHANGED_B,CMS816,Encounter With Severe Hypoglycemic Harm Event,<10,459
+CHANGED_B,CMS816,Severe Hypoglycemic Harm Event,<10,459
+CHANGED_B,CMS816,Glucose Test With Result Less Than 40,<10,459
+CHANGED_B,CMS871,Days in Hospitalization,320,320
+CHANGED_B,CMS871,Days with Glucose Results,320,320
+CHANGED_B,CMS871,Denominator,320,320
+CHANGED_B,CMS871,Encounter with Hypoglycemic Medication,320,320
+CHANGED_B,CMS871,Days with Hyperglycemic Events,320,320
+CHANGED_B,CMS871,Initial Population,320,320
+CHANGED_B,CMS871,Measurement Population,320,320
+CHANGED_B,CMS871,Denominator Exclusions,<10,320
+CHANGED_B,CMS871,Numerator Exclusions,<10,320
+CHANGED_B,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,320
+CHANGED_B,CMS871,Encounter with Discharge for Hospice Care,<10,320
+CHANGED_C,CMS816,Hypoglycemic Medication Administration,107,107
+CHANGED_C,CMS816,Initial Population,107,107
+CHANGED_C,CMS816,Encounter With Hypoglycemic Medication Administration,107,107
+CHANGED_C,CMS816,Denominator,107,107
+CHANGED_C,CMS816,Encounter With Severe Hypoglycemic Harm Event,<10,107
+CHANGED_C,CMS816,Severe Hypoglycemic Harm Event,<10,107
+CHANGED_C,CMS816,Numerator,<10,107
+CHANGED_C,CMS816,Glucose Test With Result Less Than 40,<10,107
+CHANGED_C,CMS871,Initial Population,66,66
+CHANGED_C,CMS871,Measurement Population,66,66
+CHANGED_C,CMS871,Days with Glucose Results,66,66
+CHANGED_C,CMS871,Denominator,66,66
+CHANGED_C,CMS871,Encounter with Hypoglycemic Medication,66,66
+CHANGED_C,CMS871,Days with Hyperglycemic Events,66,66
+CHANGED_C,CMS871,Days in Hospitalization,66,66
+CHANGED_D,CMS816,Hypoglycemic Medication Administration,425,425
+CHANGED_D,CMS816,Initial Population,423,425
+CHANGED_D,CMS816,Denominator,423,425
+CHANGED_D,CMS816,Encounter With Hypoglycemic Medication Administration,423,425
+CHANGED_D,CMS816,Numerator,<10,425
+CHANGED_D,CMS816,Encounter With Severe Hypoglycemic Harm Event,<10,425
+CHANGED_D,CMS816,Severe Hypoglycemic Harm Event,<10,425
+CHANGED_D,CMS816,Glucose Test With Result Less Than 40,<10,425
+CHANGED_D,CMS871,Measurement Population,355,355
+CHANGED_D,CMS871,Days with Glucose Results,355,355
+CHANGED_D,CMS871,Days in Hospitalization,355,355
+CHANGED_D,CMS871,Initial Population,355,355
+CHANGED_D,CMS871,Denominator,355,355
+CHANGED_D,CMS871,Encounter with Hypoglycemic Medication,355,355
+CHANGED_D,CMS871,Days with Hyperglycemic Events,355,355
+CHANGED_D,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,355
+CHANGED_D,CMS871,Encounter with Discharge for Hospice Care,<10,355
+CHANGED_D,CMS871,Denominator Exclusions,<10,355
+CHANGED_D,CMS871,Numerator Exclusions,<10,355
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Encounter with Hyperglycemic Events,24,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Numerator,24,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Glucose Tests Earlier Than Glucose Greater Than 600 within 1 Hour Prior To and 6 Hours After Encounter Start,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Numerator Exclusions,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Initial Glucose Greater Than 600 within 1 Hour Prior To and 6 Hours After Encounter Start,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Denominator Exclusions,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Encounter with Glucose Greater Than 600 within 1 Hour Prior To and 6 Hours After Encounter Start,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Encounter with Elevated Glucose Greater Than or Equal to 200,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Days with Glucose Results,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Measurement Population,<10,47
+SCENARIO_GLUCOSE_LAB_ONLY,CMS871,Initial Population,<10,47
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS816,Severe Hypoglycemic Harm Event,57,57
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS816,Numerator,57,57
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS816,Encounter With Severe Hypoglycemic Harm Event,57,57
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS816,Glucose Test With Result Less Than 40,57,57
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Numerator,361,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Encounter with Hyperglycemic Events,361,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Encounter with Elevated Glucose Greater Than or Equal to 200,174,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Initial Population,142,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Measurement Population,142,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Denominator,142,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Days with Hyperglycemic Events,142,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Days in Hospitalization,142,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Days with Glucose Results,142,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Encounter with Discharge for Hospice Care,<10,719
+SCENARIO_ICU_GLUCOSE_UNIT_ASSUMED,CMS871,Denominator Exclusions,<10,719
+SCENARIO_MISSING_LINKS_1,CMS871,Initial Population,11,11
+SCENARIO_MISSING_LINKS_1,CMS871,Measurement Population,11,11
+SCENARIO_MISSING_LINKS_1,CMS871,Days with Glucose Results,11,11
+SCENARIO_MISSING_LINKS_1,CMS871,Denominator,11,11
+SCENARIO_MISSING_LINKS_1,CMS871,Encounter with Existing Diabetes Diagnosis,11,11
+SCENARIO_MISSING_LINKS_1,CMS871,Days with Hyperglycemic Events,11,11
+SCENARIO_MISSING_LINKS_1,CMS871,Days in Hospitalization,11,11
+SCENARIO_MISSING_LINKS_10,CMS871,Encounter with Existing Diabetes Diagnosis,133,133
+SCENARIO_MISSING_LINKS_10,CMS871,Days with Hyperglycemic Events,133,133
+SCENARIO_MISSING_LINKS_10,CMS871,Initial Population,133,133
+SCENARIO_MISSING_LINKS_10,CMS871,Measurement Population,133,133
+SCENARIO_MISSING_LINKS_10,CMS871,Days with Glucose Results,133,133
+SCENARIO_MISSING_LINKS_10,CMS871,Days in Hospitalization,133,133
+SCENARIO_MISSING_LINKS_10,CMS871,Denominator,133,133
+SCENARIO_MISSING_LINKS_10,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,133
+SCENARIO_MISSING_LINKS_10,CMS871,Encounter with Discharge for Hospice Care,<10,133
+SCENARIO_MISSING_LINKS_10,CMS871,Denominator Exclusions,<10,133
+SCENARIO_MISSING_LINKS_10,CMS871,Numerator Exclusions,<10,133
+SCENARIO_MISSING_LINKS_50,CMS871,Encounter with Existing Diabetes Diagnosis,686,686
+SCENARIO_MISSING_LINKS_50,CMS871,Denominator,686,686
+SCENARIO_MISSING_LINKS_50,CMS871,Days in Hospitalization,686,686
+SCENARIO_MISSING_LINKS_50,CMS871,Days with Hyperglycemic Events,686,686
+SCENARIO_MISSING_LINKS_50,CMS871,Initial Population,686,686
+SCENARIO_MISSING_LINKS_50,CMS871,Measurement Population,686,686
+SCENARIO_MISSING_LINKS_50,CMS871,Days with Glucose Results,686,686
+SCENARIO_MISSING_LINKS_50,CMS871,Encounter with Discharge for Hospice Care,<10,686
+SCENARIO_MISSING_LINKS_50,CMS871,Denominator Exclusions,<10,686
+SCENARIO_MISSING_LINKS_50,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,686
+SCENARIO_MISSING_LINKS_50,CMS871,Numerator Exclusions,<10,686
+SCENARIO_NATURAL_CODES,CMS816,Initial Population,10487,10487
+SCENARIO_NATURAL_CODES,CMS816,Hypoglycemic Medication Administration,10487,10487
+SCENARIO_NATURAL_CODES,CMS816,Denominator,10487,10487
+SCENARIO_NATURAL_CODES,CMS816,Encounter With Hypoglycemic Medication Administration,10487,10487
+SCENARIO_NATURAL_CODES,CMS816,Encounter With Severe Hypoglycemic Harm Event,73,10487
+SCENARIO_NATURAL_CODES,CMS816,Numerator,73,10487
+SCENARIO_NATURAL_CODES,CMS816,Severe Hypoglycemic Harm Event,73,10487
+SCENARIO_NATURAL_CODES,CMS816,Glucose Test With Result Less Than 40,73,10487
+SCENARIO_NATURAL_CODES,CMS871,Initial Population,4627,5737
+SCENARIO_NATURAL_CODES,CMS871,Days with Hyperglycemic Events,4627,5737
+SCENARIO_NATURAL_CODES,CMS871,Days in Hospitalization,4627,5737
+SCENARIO_NATURAL_CODES,CMS871,Denominator,4627,5737
+SCENARIO_NATURAL_CODES,CMS871,Days with Glucose Results,4627,5737
+SCENARIO_NATURAL_CODES,CMS871,Measurement Population,4627,5737
+SCENARIO_NATURAL_CODES,CMS871,Encounter with Hypoglycemic Medication,4583,5737
+SCENARIO_NATURAL_CODES,CMS871,Encounter with Elevated Glucose Greater Than or Equal to 200,3491,5737
+SCENARIO_NATURAL_CODES,CMS871,Numerator,1400,5737
+SCENARIO_NATURAL_CODES,CMS871,Encounter with Hyperglycemic Events,1400,5737
+SCENARIO_NATURAL_CODES,CMS871,Denominator Exclusions,160,5737
+SCENARIO_NATURAL_CODES,CMS871,Numerator Exclusions,160,5737
+SCENARIO_NATURAL_LINKS,CMS871,Encounter with Existing Diabetes Diagnosis,1288,1288
+SCENARIO_NATURAL_LINKS,CMS871,Denominator,1288,1288
+SCENARIO_NATURAL_LINKS,CMS871,Days with Hyperglycemic Events,1288,1288
+SCENARIO_NATURAL_LINKS,CMS871,Measurement Population,1288,1288
+SCENARIO_NATURAL_LINKS,CMS871,Days with Glucose Results,1288,1288
+SCENARIO_NATURAL_LINKS,CMS871,Days in Hospitalization,1288,1288
+SCENARIO_NATURAL_LINKS,CMS871,Initial Population,1288,1288
+SCENARIO_NATURAL_LINKS,CMS871,Denominator Exclusions,22,1288
+SCENARIO_NATURAL_LINKS,CMS871,Numerator Exclusions,22,1288
+SCENARIO_NATURAL_LINKS,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,22,1288
+SCENARIO_NATURAL_LINKS,CMS871,Encounter with Discharge for Hospice Care,22,1288
+SCENARIO_NATURAL_PROFILES,CMS816,Initial Population,10487,10487
+SCENARIO_NATURAL_PROFILES,CMS816,Hypoglycemic Medication Administration,10487,10487
+SCENARIO_NATURAL_PROFILES,CMS816,Denominator,10487,10487
+SCENARIO_NATURAL_PROFILES,CMS816,Encounter With Hypoglycemic Medication Administration,10487,10487
+SCENARIO_NATURAL_PROFILES,CMS816,Numerator,73,10487
+SCENARIO_NATURAL_PROFILES,CMS816,Encounter With Severe Hypoglycemic Harm Event,73,10487
+SCENARIO_NATURAL_PROFILES,CMS816,Severe Hypoglycemic Harm Event,73,10487
+SCENARIO_NATURAL_PROFILES,CMS816,Glucose Test With Result Less Than 40,73,10487
+SCENARIO_NATURAL_PROFILES,CMS871,Initial Population,4627,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Days with Hyperglycemic Events,4627,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Denominator,4627,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Days in Hospitalization,4627,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Days with Glucose Results,4627,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Measurement Population,4627,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Encounter with Hypoglycemic Medication,4583,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Encounter with Elevated Glucose Greater Than or Equal to 200,3491,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Encounter with Hyperglycemic Events,1400,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Numerator,1400,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Denominator Exclusions,160,5737
+SCENARIO_NATURAL_PROFILES,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,160,5737
+SCENARIO_NATURAL_UNITS,CMS816,Encounter With Severe Hypoglycemic Harm Event,73,73
+SCENARIO_NATURAL_UNITS,CMS816,Severe Hypoglycemic Harm Event,73,73
+SCENARIO_NATURAL_UNITS,CMS816,Numerator,73,73
+SCENARIO_NATURAL_UNITS,CMS816,Glucose Test With Result Less Than 40,73,73
+SCENARIO_NATURAL_UNITS,CMS871,Encounter with Elevated Glucose Greater Than or Equal to 200,2424,2424
+SCENARIO_NATURAL_UNITS,CMS871,Encounter with Hyperglycemic Events,1400,2424
+SCENARIO_NATURAL_UNITS,CMS871,Numerator,1400,2424
+SCENARIO_NATURAL_UNITS,CMS871,Days in Hospitalization,1131,2424
+SCENARIO_NATURAL_UNITS,CMS871,Days with Hyperglycemic Events,1131,2424
+SCENARIO_NATURAL_UNITS,CMS871,Denominator,1131,2424
+SCENARIO_NATURAL_UNITS,CMS871,Measurement Population,1131,2424
+SCENARIO_NATURAL_UNITS,CMS871,Days with Glucose Results,1131,2424
+SCENARIO_NATURAL_UNITS,CMS871,Initial Population,1131,2424
+SCENARIO_NATURAL_UNITS,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,90,2424
+SCENARIO_NATURAL_UNITS,CMS871,Denominator Exclusions,90,2424
+SCENARIO_NATURAL_UNITS,CMS871,Numerator Exclusions,90,2424
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Qualifying Encounter,10604,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Initial Population,10535,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Encounter With Hypoglycemic Medication Administration,10535,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Denominator,10535,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Encounter With Severe Hypoglycemic Harm Event,78,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Severe Hypoglycemic Harm Event,78,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Numerator,78,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS816,Glucose Test With Result Less Than 40,78,10605
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Encounter with Hospitalization Period,16385,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Qualifying Encounter,16385,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Initial Population,16324,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Days with Hyperglycemic Events,16324,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Denominator,16324,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Days in Hospitalization,16324,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Days with Glucose Results,16324,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Measurement Population,16324,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Encounter with Existing Diabetes Diagnosis,13554,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Encounter with Hypoglycemic Medication,10827,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Encounter with Elevated Glucose Greater Than or Equal to 200,6301,16386
+SCENARIO_OBSERVATION_AS_INPATIENT,CMS871,Numerator,1239,16386
+SCENARIO_STATUS_LOWER,CMS816,Hypoglycemic Medication Administration,48,48
+SCENARIO_STATUS_LOWER,CMS816,Initial Population,47,48
+SCENARIO_STATUS_LOWER,CMS816,Denominator,47,48
+SCENARIO_STATUS_LOWER,CMS816,Encounter With Hypoglycemic Medication Administration,47,48
+SCENARIO_STATUS_LOWER,CMS816,Encounter With Severe Hypoglycemic Harm Event,<10,48
+SCENARIO_STATUS_LOWER,CMS816,Numerator,<10,48
+SCENARIO_STATUS_LOWER,CMS816,Severe Hypoglycemic Harm Event,<10,48
+SCENARIO_STATUS_LOWER,CMS816,Glucose Test With Result Less Than 40,<10,48
+SCENARIO_STATUS_LOWER,CMS871,Measurement Population,14,14
+SCENARIO_STATUS_LOWER,CMS871,Days with Glucose Results,14,14
+SCENARIO_STATUS_LOWER,CMS871,Denominator,14,14
+SCENARIO_STATUS_LOWER,CMS871,Encounter with Hypoglycemic Medication,14,14
+SCENARIO_STATUS_LOWER,CMS871,Days with Hyperglycemic Events,14,14
+SCENARIO_STATUS_LOWER,CMS871,Days in Hospitalization,14,14
+SCENARIO_STATUS_LOWER,CMS871,Initial Population,14,14
+SCENARIO_STATUS_UPPER,CMS816,Hypoglycemic Medication Administration,22,22
+SCENARIO_STATUS_UPPER,CMS816,Initial Population,22,22
+SCENARIO_STATUS_UPPER,CMS816,Encounter With Hypoglycemic Medication Administration,22,22
+SCENARIO_STATUS_UPPER,CMS816,Denominator,22,22
+SCENARIO_STATUS_UPPER,CMS871,Denominator,<10,<10
+SCENARIO_STATUS_UPPER,CMS871,Encounter with Hypoglycemic Medication,<10,<10
+SCENARIO_STATUS_UPPER,CMS871,Days with Hyperglycemic Events,<10,<10
+SCENARIO_STATUS_UPPER,CMS871,Initial Population,<10,<10
+SCENARIO_STATUS_UPPER,CMS871,Measurement Population,<10,<10
+SCENARIO_STATUS_UPPER,CMS871,Days with Glucose Results,<10,<10
+SCENARIO_STATUS_UPPER,CMS871,Days in Hospitalization,<10,<10
+SCENARIO_TERM_TYPE_1,CMS816,Initial Population,<10,<10
+SCENARIO_TERM_TYPE_1,CMS816,Encounter With Hypoglycemic Medication Administration,<10,<10
+SCENARIO_TERM_TYPE_1,CMS816,Denominator,<10,<10
+SCENARIO_TERM_TYPE_1,CMS816,Hypoglycemic Medication Administration,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Measurement Population,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Initial Population,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Days in Hospitalization,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Days with Glucose Results,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Denominator,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Encounter with Hypoglycemic Medication,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Days with Hyperglycemic Events,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Denominator Exclusions,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Numerator Exclusions,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,<10
+SCENARIO_TERM_TYPE_1,CMS871,Encounter with Discharge for Hospice Care,<10,<10
+SCENARIO_TERM_TYPE_10,CMS816,Initial Population,68,68
+SCENARIO_TERM_TYPE_10,CMS816,Hypoglycemic Medication Administration,68,68
+SCENARIO_TERM_TYPE_10,CMS816,Denominator,68,68
+SCENARIO_TERM_TYPE_10,CMS816,Encounter With Hypoglycemic Medication Administration,68,68
+SCENARIO_TERM_TYPE_10,CMS816,Encounter With Severe Hypoglycemic Harm Event,<10,68
+SCENARIO_TERM_TYPE_10,CMS816,Numerator,<10,68
+SCENARIO_TERM_TYPE_10,CMS816,Severe Hypoglycemic Harm Event,<10,68
+SCENARIO_TERM_TYPE_10,CMS816,Glucose Test With Result Less Than 40,<10,68
+SCENARIO_TERM_TYPE_10,CMS871,Days in Hospitalization,34,34
+SCENARIO_TERM_TYPE_10,CMS871,Initial Population,34,34
+SCENARIO_TERM_TYPE_10,CMS871,Measurement Population,34,34
+SCENARIO_TERM_TYPE_10,CMS871,Days with Glucose Results,34,34
+SCENARIO_TERM_TYPE_10,CMS871,Denominator,34,34
+SCENARIO_TERM_TYPE_10,CMS871,Encounter with Hypoglycemic Medication,34,34
+SCENARIO_TERM_TYPE_10,CMS871,Days with Hyperglycemic Events,34,34
+SCENARIO_TERM_TYPE_10,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,34
+SCENARIO_TERM_TYPE_10,CMS871,Encounter with Discharge for Hospice Care,<10,34
+SCENARIO_TERM_TYPE_10,CMS871,Denominator Exclusions,<10,34
+SCENARIO_TERM_TYPE_10,CMS871,Numerator Exclusions,<10,34
+SCENARIO_TERM_TYPE_50,CMS816,Hypoglycemic Medication Administration,596,596
+SCENARIO_TERM_TYPE_50,CMS816,Initial Population,589,596
+SCENARIO_TERM_TYPE_50,CMS816,Denominator,589,596
+SCENARIO_TERM_TYPE_50,CMS816,Encounter With Hypoglycemic Medication Administration,589,596
+SCENARIO_TERM_TYPE_50,CMS816,Numerator,12,596
+SCENARIO_TERM_TYPE_50,CMS816,Encounter With Severe Hypoglycemic Harm Event,12,596
+SCENARIO_TERM_TYPE_50,CMS816,Severe Hypoglycemic Harm Event,12,596
+SCENARIO_TERM_TYPE_50,CMS816,Glucose Test With Result Less Than 40,12,596
+SCENARIO_TERM_TYPE_50,CMS871,Measurement Population,240,240
+SCENARIO_TERM_TYPE_50,CMS871,Days with Glucose Results,240,240
+SCENARIO_TERM_TYPE_50,CMS871,Days in Hospitalization,240,240
+SCENARIO_TERM_TYPE_50,CMS871,Initial Population,240,240
+SCENARIO_TERM_TYPE_50,CMS871,Denominator,240,240
+SCENARIO_TERM_TYPE_50,CMS871,Encounter with Hypoglycemic Medication,240,240
+SCENARIO_TERM_TYPE_50,CMS871,Days with Hyperglycemic Events,240,240
+SCENARIO_TERM_TYPE_50,CMS871,Encounter with Early Glucose Greater Than 600 or with Comfort or Hospice Care,<10,240
+SCENARIO_TERM_TYPE_50,CMS871,Encounter with Discharge for Hospice Care,<10,240
+SCENARIO_TERM_TYPE_50,CMS871,Denominator Exclusions,<10,240
+SCENARIO_TERM_TYPE_50,CMS871,Numerator Exclusions,<10,240

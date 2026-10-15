@@ -1,0 +1,4 @@
+# Python packages for the figure scripts (pipeline/r3/funnel.py, manuscript/scripts/*.py).
+# Everything else in the analysis uses the standard library and the AWS CLI.
+#   python3 -m pip install --user -r requirements-figures.txt
+matplotlib>=3.8

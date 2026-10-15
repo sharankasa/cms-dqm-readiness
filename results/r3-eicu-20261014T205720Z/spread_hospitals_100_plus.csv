@@ -1,0 +1,2 @@
+hospitals_100_plus,glucose_median,glucose_q1,glucose_q3,glucose_min,glucose_max,bedside_median,bedside_q1,bedside_q3,bedside_min,bedside_max,insulin_median,insulin_q1,insulin_q3,insulin_min,insulin_max,diabetes_median,diabetes_q1,diabetes_q3,diabetes_min,diabetes_max,comfort_eol_median,comfort_eol_q1,comfort_eol_q3,comfort_eol_min,comfort_eol_max,mgdl_median,mgdl_min,mgdl_max
+175,97.9,94.8,99.2,64.8,100.0,61.0,46.6,76.5,0.0,99.1,16.9,5.2,38.7,0.0,89.3,29.8,23.8,34.2,0.9,47.5,2.2,0.9,3.5,0.0,20.3,100.0,100.0,100.0

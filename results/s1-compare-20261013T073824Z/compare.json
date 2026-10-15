@@ -1,0 +1,44 @@
+{
+  "sample": "s1",
+  "database": "dqm_s1",
+  "ref_out": "s3://your-bucket/dqm/s1/20261010T054127Z/runs/b6-reference",
+  "sliced_out": "s3://your-bucket/dqm/s1/20261010T054127Z/runs/sliced-per-stay",
+  "verdict": {
+    "CMS816FHIRHHHypo": {
+      "outcomes": {
+        "identical": "1994",
+        "stopped_reference": "<10"
+      },
+      "S1_holds": true,
+      "stopped_reference_stays": "<10",
+      "exactly_once": true,
+      "broken_lines_skipped": {
+        "broken_lines_reference": "0",
+        "broken_lines_sliced": "0"
+      }
+    },
+    "CMS871FHIRHHHyper": {
+      "outcomes": {
+        "identical": "1994",
+        "stopped_reference": "<10"
+      },
+      "S1_holds": true,
+      "stopped_reference_stays": "<10",
+      "exactly_once": true,
+      "broken_lines_skipped": {
+        "broken_lines_reference": "0",
+        "broken_lines_sliced": "0"
+      }
+    }
+  },
+  "stopped_shards": [
+    1,
+    3,
+    4,
+    13,
+    26
+  ],
+  "queries": 14,
+  "data_scanned_mb": 4.9,
+  "wall_seconds": 34.7
+}
