@@ -4,3 +4,40 @@ Copyright 2026 Sai Sharan Kasa
 This product includes software developed by the author for the study "Identical results, hidden data problems:
 running CMS's digital quality measures on real hospital data".
 CMS measure specifications, value sets and test cases are not included and remain subject to their own terms.
+
+
+Terminologies
+-------------
+
+This repository contains no UMLS Metathesaurus files, no value-set expansions and no vocabulary tables. The code
+downloads terminology content at run time with each user's own UMLS license. The analyses reported in the study used:
+
+- value-set expansions from the Value Set Authority Center (VSAC) of the U.S. National Library of Medicine (NLM), as
+  bundled in CMS's measure packages (VSAC manifest of 17 November 2025) or downloaded from VSAC;
+- RxNorm, full monthly release of 5 October 2026, from NLM.
+
+This content was obtained from NLM under the UMLS Metathesaurus License (2026AA). NLM is the source of this content.
+Neither NLM nor the organizations whose vocabularies are included in the UMLS have endorsed this software.
+
+Some material in the UMLS Metathesaurus is from copyrighted sources of the respective copyright holders. Users of the
+UMLS Metathesaurus are solely responsible for compliance with any copyright, patent or trademark restrictions and are
+referred to the copyright, patent or trademark notices appearing in the original sources, all of which are hereby
+incorporated by reference.
+
+Vocabularies used, and what of each appears in this repository (a portion only in every case):
+
+- RxNorm (NLM): one concept identifier (253182) in a unit test, one drug name in a code comment, and ingredient and
+  brand words in search patterns.
+- SNOMED CT, US Edition (version of 1 September 2024, as carried in CMS's value-set expansions): five concept
+  identifiers and one description, in the mapping and readiness-check code.
+- LOINC (Regenstrief Institute): one code (2345-7) in a unit test.
+- ICD-10-CM and ICD-9-CM: code system identifiers only; no codes.
+
+SNOMED CT: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of the
+International Health Terminology Standards Development Organisation (IHTSDO). All rights reserved. SNOMED CT®, was
+originally created by The College of American Pathologists. "SNOMED" and "SNOMED CT" are registered trademarks of the
+IHTSDO.
+
+LOINC: This material contains content from LOINC (http://loinc.org). LOINC is copyright © Regenstrief Institute, Inc.
+and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the
+license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc.

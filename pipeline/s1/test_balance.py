@@ -59,6 +59,8 @@ def make_records(con, schema, rng, patients):
     """ref_lines rows: Observation (glucose) and MedicationAdministration (hypoglycemic) per patient."""
     con.execute(f"CREATE SCHEMA IF NOT EXISTS {schema}")
     con.execute(f"CREATE TABLE {schema}.vs_members (oid VARCHAR, system VARCHAR, code VARCHAR)")
+    # Fixture codes: LOINC 2345-7 "Glucose [Mass/volume] in Serum or Plasma"; RxNorm 253182 "insulin, regular, human";
+    # "0000-0" is a made-up non-matching code, not a LOINC code. Terminology notices: NOTICE.
     con.execute(f"INSERT INTO {schema}.vs_members VALUES ('{GLU}', 'http://loinc.org', '2345-7'),"
                 f" ('{HYPO}', 'http://www.nlm.nih.gov/research/umls/rxnorm', '253182'),"
                 f" ('other', 'http://loinc.org', '0000-0')")

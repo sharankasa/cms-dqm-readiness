@@ -83,3 +83,7 @@ python3 manuscript/scripts/make_tables_s3_s4_s6.py
 
 Please cite the preprint (citation to be added) and this repository (`CITATION.cff`). Code is released under the
 Apache License 2.0. The measure specifications are CMS's; the datasets keep their own licenses.
+
+**Terminology licenses.** The code uses value sets from the Value Set Authority Center and RxNorm, which you
+download with your own free UMLS license, and refers to a few SNOMED CT and LOINC codes. The repository holds only
+those few identifiers. The NLM acknowledgment and the SNOMED CT and LOINC notices are in [`NOTICE`](NOTICE).
