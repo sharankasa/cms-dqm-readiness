@@ -52,7 +52,7 @@ WHERE v.system = 'http://www.nlm.nih.gov/research/umls/rxnorm'
 GROUP BY 1, 2 ORDER BY 1, 3 DESC;
 
 -- 4. Brand -> generic through RxNorm's tradename relationship, on the two insulin brands seen in the
---    open demo (FINDINGS 2026-10-07): Humalog 865098 and Humulin R 311036. Both directions listed,
+--    open demo (checked 7 Oct 2026): Humalog 865098 and Humulin R 311036. Both directions listed,
 --    with the term types, so the direction convention is checked rather than assumed.
 SELECT r.rxcui1, c1.tty AS tty1, r.rela, r.rxcui2, c2.tty AS tty2, c2.str AS str2
 FROM dqm_ref.rxnrel_{version} r

@@ -49,8 +49,9 @@ The short folder names (s1, s2, v, r3) follow the outcome labels in the preregis
 ## What is not here
 
 - **No patient data.** MIMIC-IV, MIMIC-IV-on-FHIR and eICU are available to credentialed users from
-  [PhysioNet](https://physionet.org) under their data use agreements. Everything in `results/` is aggregate; counts
-  from 1 to 9 are shown as `<10`.
+  [PhysioNet](https://physionet.org) under their data use agreements. Results from the credentialed data are aggregate, and counts of
+  stays or patients from 1 to 9 are shown as `<10`. Counts of medication codes in the mapping comparison are exact, as in
+  the paper. The test-case results in `results/c0-*` list CMS's synthetic test patients.
 - **No value-set expansions.** They come from the Value Set Authority Center and need a free UMLS license
   (`testcases/fetch_vsac.py` downloads them with your own key).
 - **No medication crosswalk or review decisions.** They were built from the credentialed data and contain its drug
@@ -85,5 +86,5 @@ Please cite the preprint (citation to be added) and this repository (`CITATION.c
 Apache License 2.0. The measure specifications are CMS's; the datasets keep their own licenses.
 
 **Terminology licenses.** The code uses value sets from the Value Set Authority Center and RxNorm, which you
-download with your own free UMLS license, and refers to a few SNOMED CT and LOINC codes. The repository holds only
+download with your own free UMLS license, and refers to a few SNOMED CT, LOINC, RxNorm and ICD codes. The repository holds only
 those few identifiers. The NLM acknowledgment and the SNOMED CT and LOINC notices are in [`NOTICE`](NOTICE).

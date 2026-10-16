@@ -82,7 +82,7 @@ def main():
     t_slice = time.time() - t0 - t_load
 
     # manifest. mp_year = calendar year of the stay's discharge as recorded (local time in the data):
-    # the measurement period each stay is evaluated in (PREREG: the one-year period containing discharge).
+    # the measurement period each stay is evaluated in (study plan: the one-year period containing discharge).
     rows = con.execute("""
         SELECT b.unit_id, b.patient_id, b.enc_start, b.enc_end, b.h_lo, b.w_lo, b.w_hi,
                coalesce(h.n_resources, 0), h.slice_sha256, h.content_sha256,

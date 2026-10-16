@@ -7,7 +7,7 @@
 -- Database: {db} (the S1 sample). Pilot timings from {pilot_db} (the pilot, registered, excluded).
 --
 -- (fit)     pilot_groups: the pilot's patient-year groups (no identifiers): whole-record workload metric
---              work = G x M (FINDINGS 2026-10-11, the equivalence run planning) and engine seconds (CMS816 + CMS871).
+--              work = G x M (from the pilot, 11 Oct 2026) and engine seconds (CMS816 + CMS871).
 --              runtime_fit: the MEAN time as a power of work, mean(seconds) = scale x exp(a) x work^k,
 --              fitted where the work term dominates (work >= {fit_min_work}; below it a fixed start-up
 --              cost flattens the slope): the fit groups are cut into {fit_bins} equal-count bins by work,
@@ -207,7 +207,7 @@ SELECT shard,
        round(sum(pred_s) / 3600, 2) AS predicted_hours
 FROM group_shard GROUP BY shard ORDER BY shard;
 
--- model check on the pilot: observed vs predicted seconds per work band (same bands as FINDINGS)
+-- model check on the pilot: observed vs predicted seconds per work band (same bands as the pilot check)
 WITH p AS (
   SELECT x.work, x.s,
          CASE WHEN x.work = 0 THEN f.base0 WHEN x.work < f.fit_min_work THEN f.base1
