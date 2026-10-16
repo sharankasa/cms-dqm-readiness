@@ -9,7 +9,7 @@ authors:
 license: Apache-2.0
 repository-code: "https://github.com/sharankasa/cms-dqm-readiness"
 version: "1.0.0"
-date-released: "2026-10-17"
+date-released: "2026-10-15"
 keywords:
   - digital quality measures
   - FHIR

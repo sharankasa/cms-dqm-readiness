@@ -1,0 +1,86 @@
+{
+  "sql": "pipeline/terminology/43_model_compare.sql",
+  "params": {
+    "version": "20261005",
+    "round": "r1",
+    "model_out": "s3://your-bucket/dqm/map/model-r1-openai-gpt-oss-120b-1-0-20261013T205817Z",
+    "loc": "s3://your-bucket/dqm/map/model-compare-r1-20261013T212126Z"
+  },
+  "db": "dqm_map",
+  "finished_utc": "2026-10-13T21:22:08+00:00",
+  "queries": 13,
+  "data_scanned_mb": 133.3,
+  "engine_seconds": 8.5,
+  "statements": [
+    {
+      "n": 1,
+      "statement_start": "DROP TABLE IF EXISTS dqm_map.model_decisions_raw_r1",
+      "query_id": "99fcb917-a6ae-4ad7-b5dc-ed79d6413183"
+    },
+    {
+      "n": 2,
+      "statement_start": "CREATE EXTERNAL TABLE dqm_map.model_decisions_raw_r1 (",
+      "query_id": "eef7a276-29b2-4237-bdb8-98a66a288998"
+    },
+    {
+      "n": 3,
+      "statement_start": "DROP TABLE IF EXISTS dqm_map.model_vs_human_r1",
+      "query_id": "c78efe97-7b1f-4d62-a848-089eed4d5553"
+    },
+    {
+      "n": 4,
+      "statement_start": "CREATE TABLE dqm_map.model_vs_human_r1 WITH (format",
+      "query_id": "4b5f93fe-e94f-4ebf-afdb-25e4e7492a73"
+    },
+    {
+      "n": 5,
+      "statement_start": "SELECT max(model_id) AS model, count(*)",
+      "query_id": "3efee2a7-e476-4278-95b4-4e1605350e1d",
+      "rows": 1
+    },
+    {
+      "n": 6,
+      "statement_start": "SELECT part, count_if(human IN ('map',",
+      "query_id": "b0b58560-92e6-4627-aed4-ff94856134a9",
+      "rows": 6
+    },
+    {
+      "n": 7,
+      "statement_start": "WITH s AS ( SELECT",
+      "query_id": "7db4d8b2-7d0d-41e1-970d-45e46cb5141b",
+      "rows": 12
+    },
+    {
+      "n": 8,
+      "statement_start": "WITH s AS ( SELECT",
+      "query_id": "88e43792-0264-418f-b936-992762f687cd",
+      "rows": 1
+    },
+    {
+      "n": 9,
+      "statement_start": "DROP TABLE IF EXISTS dqm_map.med_additions_model_r1",
+      "query_id": "e98ddd5d-4a4b-4e9f-ba42-a0e9bcef51cd"
+    },
+    {
+      "n": 10,
+      "statement_start": "CREATE TABLE dqm_map.med_additions_model_r1 WITH (format",
+      "query_id": "6f392c56-b608-428a-9895-65680ab48910"
+    },
+    {
+      "n": 11,
+      "statement_start": "DROP TABLE IF EXISTS dqm_map.med_drops_model_r1",
+      "query_id": "55f6d48b-0abf-4928-b382-b3b1ce6f26c0"
+    },
+    {
+      "n": 12,
+      "statement_start": "CREATE TABLE dqm_map.med_drops_model_r1 WITH (format",
+      "query_id": "330c9107-6a43-4998-bb5e-a2e401f37169"
+    },
+    {
+      "n": 13,
+      "statement_start": "SELECT (SELECT count(*) FROM dqm_map.med_additions_model_r1)",
+      "query_id": "35169c59-c2d1-4ecf-8ae5-5e66f889b73f",
+      "rows": 1
+    }
+  ]
+}

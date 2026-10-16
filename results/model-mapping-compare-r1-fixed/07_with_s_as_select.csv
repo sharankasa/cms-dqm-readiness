@@ -1,0 +1,13 @@
+part,confidence,entries,measure_equivalent,same_product
+A high-volume excluded code,high,665,660,0
+A high-volume excluded code,low,5,1,0
+A high-volume excluded code,medium,1,1,0
+B random tail code,high,300,299,0
+C review: NDC not mapped,high,92,34,29
+C review: NDC not mapped,medium,11,11,2
+D review: no NDC,high,114,102,83
+D review: no NDC,low,17,4,1
+D review: no NDC,medium,151,71,39
+E review: mix with a value-set drug,high,54,30,30
+F review: ICU item,high,6,5,0
+F review: ICU item,medium,2,2,0

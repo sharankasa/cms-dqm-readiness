@@ -1,0 +1,7 @@
+part,both_yes,model_missed,model_extra,both_no,human_undecided
+A high-volume excluded code,0,0,9,662,0
+B random tail code,0,0,1,299,0
+C review: NDC not mapped,52,31,20,0,0
+D review: no NDC,193,3,84,2,0
+E review: mix with a value-set drug,30,0,24,0,0
+F review: ICU item,8,0,0,0,0

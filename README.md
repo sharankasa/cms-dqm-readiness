@@ -76,6 +76,7 @@ python3 manuscript/scripts/make_table3_figure5.py
 python3 manuscript/scripts/make_figure6_scale.py
 python3 manuscript/scripts/make_figures_1_3.py
 python3 manuscript/scripts/make_table_s5_persistence.py
+python3 manuscript/scripts/make_tables_s3_s4_s6.py
 ```
 
 ## Citation and license

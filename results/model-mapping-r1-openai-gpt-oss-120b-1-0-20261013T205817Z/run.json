@@ -1,0 +1,43 @@
+{
+  "model": "openai.gpt-oss-120b-1:0",
+  "prompt_version": "medmap-v1-2026-10-13",
+  "prompt_sha256": "d6a55f235c63754a",
+  "entries": 1418,
+  "parse_ok": 1418,
+  "rxcui_invalid_dropped": 1,
+  "errors": 0,
+  "decisions_by_part": {
+    "A high-volume excluded code": {
+      "no": "662",
+      "map": "<10",
+      "possible": "<10"
+    },
+    "B random tail code": {
+      "map": "<10",
+      "no": "299"
+    },
+    "C review: NDC not mapped": {
+      "map": "61",
+      "possible": "11",
+      "no": "31"
+    },
+    "D review: no NDC": {
+      "possible": "167",
+      "map": "110",
+      "no": "<10"
+    },
+    "E review: mix with a value-set drug": {
+      "map": "54"
+    },
+    "F review: ICU item": {
+      "map": "<10",
+      "possible": "<10"
+    }
+  },
+  "input_tokens": 900693,
+  "output_tokens": 185317,
+  "estimated_cost_usd": 0.246,
+  "wall_seconds": 749.5,
+  "s3_output": "s3://your-bucket/dqm/map/model-r1-openai-gpt-oss-120b-1-0-20261013T205817Z",
+  "athena_scanned_mb": 0.2
+}
